@@ -6,13 +6,12 @@ def frequent_num(lst):
     return most_common[0], most_common[1]
 
 def main():
-    print("Find the Most Frequent Element in a List")
     try:
-        user_list = list(map(int, input("Enter numbers separated by spaces: ").split()))
+        user_list = list(map(int, input("Enter a number ").split()))
         most_frequent, count = frequent_num(user_list)
-        print(f"The most frequent element: {most_frequent}, Appears: {count} times.")
+        print(f"The most frequent number: {most_frequent}, Appears: {count} times.")
     except ValueError:
-        print("Invalid input! Please enter a list of numbers separated by spaces.")
+        print("Invalid input!")
 
 if __name__ == "__main__":
     main()
